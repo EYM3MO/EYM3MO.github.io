@@ -1,11 +1,10 @@
 /* reset css */
-h1,h2,h3,h4,h5,h6,figure,p{
+h1,h3,h4,h5,h6,figure,p{
     margin:0;
     padding: 0;
 }
-
 .container {
-    width: 100%;
+    width: 1280px;
     margin: 0 auto;
     /* margin: 0; aplica a todos */
     /* margin 0 0; el primero aplica top-bottom y el segundo right-left*/
@@ -30,11 +29,11 @@ background-color:  #4d97f1;
 
 }
 
-#nota_import{
+#nota_principal{
     text-align:center;
 }
-
-#menus {
+/* BARRA NAVEGACION INICIO */
+#menu {
     height: 50px;
     display: flex;
     justify-content: center;
@@ -43,37 +42,37 @@ background-color:  #4d97f1;
 }
 
 
-#menus ul {
+#menu ul {
     padding: 0;
     
 }
 
 
-#menus li {
+#menu li {
     list-style-type: none;
     padding: 10px;
     display: inline-block;
 }
 
 
-#menus li a{
+#menu li a{
     text-decoration: none;
     color:black;
-    font: inherit;
+    font:monospace;
 }
 
 
-#menus>ul>li{
+#menu>ul>li{
     display: inline-block;
 } 
 
 
-#menus>ul>li>a{
+#menu>ul>li>a{
     padding: 20px;
 }
 
 
-#menus>ul>li>a:hover{
+#menu>ul>li>a:hover{
     color: #4d97f1;
     transition: 1s;
 }
@@ -106,7 +105,196 @@ background-color:  #4d97f1;
 #store{
     background-color: azure;
 }
-
-#nota_import img{
+/* BARRA NAVEGACION FIN */
+#nota_principal img{
     border: 5px  solid lightyellow;
+     box-shadow: 0 0 15px darkgray;
+    margin-bottom: 28px;
+}
+
+.noticias_relevantes  {
+    justify-content: space-around;
+    margin-top:15px;
+    display: flex;
+    margin-bottom: 28px;
+    margin-top: 28px;
+    
+}
+.albumes{
+    margin-bottom: 10px;
+    display:flex;
+    justify-content: space-around;
+    margin-top: 28px;
+    margin-left: 10px;
+    margin-bottom: 28px;
+    /*podria haber puesto los margin en uno solo,pero para mi es mas entendible asi*/
+}
+
+.img_notasec{
+    position: relative;
+}
+#notas-secundarias{
+    margin-top: 20px;
+    width: 950px;
+    /*min-height: inherit;*/
+}
+#notas-secundarias article{
+    display: flex;
+    padding-bottom: 40px;
+    margin-bottom: 20px;
+}
+.img_notasec  span{
+    position: absolute;
+    top: 10px;
+    left: -5px;
+    padding: 5px 10px;
+    background-color: lightyellow;
+}
+.tit_notasec{
+    font-size: 1.7em;
+    line-height: 0.9em;
+    font-variant: small-caps;
+}
+.contenido_notasec{
+    padding-left: 20px;
+    padding-right: 10px;
+}
+.intro_notasec{
+    text-align: justify;
+    margin=10px 0 !important;
+}
+
+
+.boton {
+    background:lightgray;
+    display: inline-block;
+    padding: 5px;
+    margin-top: 14px;
+    margin-left: 28px;
+    box-shadow: 0px 1px 3px darkgray;
+}
+
+.boton>div{
+    padding: 1px 20px;
+    border: 1px solid rgba(255,255,255,.7);
+}
+
+.boton p {
+    color: black;
+    font-variant: small-caps;
+    font-size:  1.1em;
+}
+#notas{
+    display:block;
+}
+#notas h1{
+    text-align: center;
+    font: monospace;
+    font-size: 1.8em;
+    color: whitesmoke;
+     border-top: 3px double lightblue;
+    border-bottom: 3px double lightblue;
+}
+#publicidad{
+    min-height:inherit;
+    width:250px;
+    display: inline-block;
+    float: right;
+    margin-right: 0px;
+}
+#publicidad img{
+    margin-left: 28px;
+}
+#redes{
+text-align: center;
+margin-bottom: 10px;
+    
+}
+.facebook, .youtube{
+    width:  33px;
+    height: 33px;
+    display: inline-block;
+    text-indent: -9999px;
+    transition: 0.1s;
+}
+
+.facebook{
+    background: url('../images/redes/facebook_youtube.png')0 0;
+}
+.youtube{
+    background: url('../images/redes/facebook_youtube.png') -43px 0;
+}
+.facebook:hover{
+    background: url('../images/redes/facebook_youtube.png') 0 -43px;
+}
+.youtube:hover{
+    background: url('../images/redes/facebook_youtube.png') -43px -43px;
+}
+#pie{
+    text-align: center;
+    align-content: center;
+}
+
+#autor p{
+    text-align: center;
+    color: aqua;
+    font-size: 1.2em;
+}
+#copyrigth p{
+    color: aqua;
+}
+#copyrigth{
+    text-align: center ;
+    border-top: 3px double lightblue;
+    border-bottom: 3px double lightblue;
+    padding: 5px 0;
+    color: darkgray;
+}
+
+#copyrigth abbr{
+    cursor: help;
+    border-bottom: 1px dotted lightgray;
+    
+}
+#gif{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 15px;
+}
+.nav_pie {
+    height: 50px;
+    /*background-color:aqua;*/
+    display: flex;
+    justify-content:flex-end;
+}
+.nav_pie li {
+    list-style-type: none;
+    padding: 5px;
+    font-family:monospace;
+    font-size: 0.8em;
+}
+.nav_pie>ul>li {
+    display: inline-block;
+}
+.nav_pie li a {
+    text-decoration: none;
+    color:white;
+}
+
+.nav_pie>ul>li>a {
+    padding: 10px;
+    /*background-color: white;*/
+}
+.nav_pie li ul {
+    display: none;
+}
+.nav_pie>ul>li>a:hover {
+    background-color: aqua;
+    transition: 0.5s;
+}
+.nav_pie>ul {
+    padding: 0;
+}
+.flexible{
+    display: flex;
 }
