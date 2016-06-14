@@ -135,8 +135,12 @@ background-color:  #4d97f1;
 }
 #notas-secundarias{
     margin-top: 20px;
-    width: 950px;
+    width: 900px;
     /*min-height: inherit;*/
+    
+}
+#biografias{
+    
 }
 #notas-secundarias article{
     display: flex;
@@ -194,6 +198,13 @@ background-color:  #4d97f1;
     color: whitesmoke;
      border-top: 3px double lightblue;
     border-bottom: 3px double lightblue;
+    margin-bottom: 15px;
+}
+#notas-secundarias h2{
+    margin-left: 5px;
+    text-align: justify;
+    font: monospace;
+    color: deepskyblue;
 }
 #publicidad{
     min-height:inherit;
@@ -201,6 +212,7 @@ background-color:  #4d97f1;
     display: inline-block;
     float: right;
     margin-right: 0px;
+    margin-top: 14px;
 }
 #publicidad img{
     margin-left: 28px;
@@ -229,6 +241,26 @@ margin-bottom: 10px;
 }
 .youtube:hover{
     background: url('../images/redes/facebook_youtube.png') -43px -43px;
+}
+.twiter, .vimeo{
+    width:  33px;
+    height: 33px;
+    display: inline-block;
+    text-indent: -9999px;
+    transition: 0.1s;
+}
+
+.twiter{
+    background: url('../images/redes/vimeo-twiter.png')0 0;
+}
+.vimeo{
+    background: url('../images/redes/vimeo-twiter.png') -43px 0;
+}
+.twiter:hover{
+    background: url('../images/redes/vimeo-twiter.png') 0 -43px;
+}
+.vimeo:hover{
+    background: url('../images/redes/vimeo-twiter.png') -43px -43px;
 }
 #pie{
     text-align: center;
@@ -297,4 +329,14 @@ margin-bottom: 10px;
 }
 .flexible{
     display: flex;
+}
+#vidios{
+    margin-top: 14px;
+    margin-bottom: 48px;
+    margin-left: 28px;
+}
+#music{
+    width: 400px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
