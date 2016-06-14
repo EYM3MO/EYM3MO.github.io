@@ -13,7 +13,9 @@ h1,h3,h4,h5,h6,figure,p{
     /* margin-top,  margin-right, margin bottom, margin left*/
     
 }
-
+.flexible{
+    display: flex;
+}
 #encabezado{
     height:150px;
     margin-bottom: 5px;
@@ -29,9 +31,6 @@ background-color:  #4d97f1;
 
 }
 
-#nota_principal{
-    text-align:center;
-}
 /* BARRA NAVEGACION INICIO */
 #menu {
     height: 50px;
@@ -106,12 +105,39 @@ background-color:  #4d97f1;
     background-color: azure;
 }
 /* BARRA NAVEGACION FIN */
+/* nota principal inicio*/
+#nota_principal{
+    text-align:center;
+}
 #nota_principal img{
     border: 5px  solid lightyellow;
      box-shadow: 0 0 15px darkgray;
     margin-bottom: 28px;
 }
+#music{
+    width: 400px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
 
+/* nota principal fin*/
+
+/* notas inicio*/
+#notas{
+    display:block;
+}
+#notas h1{
+    text-align: center;
+    font: monospace;
+    font-size: 1.8em;
+    color: whitesmoke;
+    border-top: 3px double lightblue;
+    border-bottom: 3px double lightblue;
+    margin-bottom: 15px;
+}
+/* notas fin */
+
+/* noticas inicio*/
 .noticias_relevantes  {
     justify-content: space-around;
     margin-top:15px;
@@ -120,32 +146,49 @@ background-color:  #4d97f1;
     margin-top: 28px;
     
 }
+/*noticias fin*/
+
+/* albumes inicio*/
+
 .albumes{
     margin-bottom: 10px;
     display:flex;
     justify-content: space-around;
-    margin-top: 28px;
-    margin-left: 10px;
-    margin-bottom: 28px;
-    /*podria haber puesto los margin en uno solo,pero para mi es mas entendible asi*/
+    margin-top: 14px;
+    margin-left: 14px;
+    margin-bottom: 14px;
 }
 
-.img_notasec{
-    position: relative;
-}
+/* albumes fin*/
+
+/* notas secundarias inicio*/
 #notas-secundarias{
     margin-top: 20px;
-    width: 900px;
+    width: 950px;
     /*min-height: inherit;*/
     
 }
-#biografias{
-    
+.img_notasec{
+    position: relative;
 }
 #notas-secundarias article{
     display: flex;
-    padding-bottom: 40px;
-    margin-bottom: 20px;
+    padding-bottom: 28px;
+    margin-bottom: 14px;
+}
+#notas-secundarias h2{
+    text-align: center;
+    font: monospace;
+    color: gainsboro;
+    border-top: 3px double lightblue;
+    border-bottom: 3px double lightblue;
+}
+#notas-secundarias h4{
+    margin-left: 5px;
+    text-align: justify;
+    font: monospace;
+    margin-bottom: 5px;
+    color: gainsboro;
 }
 .img_notasec  span{
     position: absolute;
@@ -167,8 +210,6 @@ background-color:  #4d97f1;
     text-align: justify;
     margin=10px 0 !important;
 }
-
-
 .boton {
     background:lightgray;
     display: inline-block;
@@ -188,24 +229,9 @@ background-color:  #4d97f1;
     font-variant: small-caps;
     font-size:  1.1em;
 }
-#notas{
-    display:block;
-}
-#notas h1{
-    text-align: center;
-    font: monospace;
-    font-size: 1.8em;
-    color: whitesmoke;
-     border-top: 3px double lightblue;
-    border-bottom: 3px double lightblue;
-    margin-bottom: 15px;
-}
-#notas-secundarias h2{
-    margin-left: 5px;
-    text-align: justify;
-    font: monospace;
-    color: deepskyblue;
-}
+/* notas secundarias fin*/
+
+/* publicidad y redes inicio*/
 #publicidad{
     min-height:inherit;
     width:250px;
@@ -213,9 +239,10 @@ background-color:  #4d97f1;
     float: right;
     margin-right: 0px;
     margin-top: 14px;
+    margin-left: 28px;
 }
 #publicidad img{
-    margin-left: 28px;
+  
 }
 #redes{
 text-align: center;
@@ -262,6 +289,21 @@ margin-bottom: 10px;
 .vimeo:hover{
     background: url('../images/redes/vimeo-twiter.png') -43px -43px;
 }
+#vidios{
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+/* publicidad y redes fin*/
+
+/* gifs inicio*/
+#gif{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 8px;
+}
+/* gifs fin*/
+
+/* pie inicio*/
 #pie{
     text-align: center;
     align-content: center;
@@ -288,21 +330,16 @@ margin-bottom: 10px;
     border-bottom: 1px dotted lightgray;
     
 }
-#gif{
-    display: flex;
-    justify-content: space-around;
-    margin-left: 15px;
-}
+
 .nav_pie {
-    height: 50px;
-    /*background-color:aqua;*/
+    height: 48px;
     display: flex;
     justify-content:flex-end;
 }
 .nav_pie li {
     list-style-type: none;
     padding: 5px;
-    font-family:monospace;
+    font-family:serif;
     font-size: 0.8em;
 }
 .nav_pie>ul>li {
@@ -310,12 +347,11 @@ margin-bottom: 10px;
 }
 .nav_pie li a {
     text-decoration: none;
-    color:white;
+    color:whitesmoke;
 }
 
 .nav_pie>ul>li>a {
     padding: 10px;
-    /*background-color: white;*/
 }
 .nav_pie li ul {
     display: none;
@@ -327,16 +363,5 @@ margin-bottom: 10px;
 .nav_pie>ul {
     padding: 0;
 }
-.flexible{
-    display: flex;
-}
-#vidios{
-    margin-top: 14px;
-    margin-bottom: 48px;
-    margin-left: 28px;
-}
-#music{
-    width: 400px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
+
+/* pie fin*/
